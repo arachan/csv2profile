@@ -1,0 +1,27 @@
+= csv2profile
+
+Make many iOS profile from csvlist.
+
+== Needs
+I have vpnlist.csv.
+vpnlist.csv have many vpn username and password.
+
+I want to make iOS Profiles from vpnlist.csv
+
+== Think
+I make vpn.template.
+vpn.template have {AuthName} and {AuthPassword}.
+
+=== Replace
+Powershell replace from {authName} to VPN UserName.
+Powershell replace from {authPassword} to VPN Password.
+
+=== Make NewProfile
+Make UserName.mobileconfig to use VPN UserName.
+
+Please show makeprofile.ps1
+
+== How to Run
+1. Prepared vpn.template
+2. Prepared vpnlist.csv
+3. run makeprofile.ps1
